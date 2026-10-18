@@ -63,3 +63,4 @@ The analysis uses R and the `lidR`, `ggplot2`, and `dplyr` packages.
 
 Potential extensions include validating ground classification, assessing point-cloud quality, deriving defensible forest-structure metrics, and relating those metrics to independent ecological observations when suitable data become available.
 
+**Note on the analysis script:** The initial sections use the MixedConifer sample dataset included with `lidR` for practice. The Finnish forest point-cloud analysis begins in Section 15. Results from the two datasets are separate and should not be interpreted as belonging to the same study.
