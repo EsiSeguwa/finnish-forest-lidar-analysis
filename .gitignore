@@ -1,0 +1,13 @@
+
+# Raw and processed point-cloud data
+data/raw/
+data/processed/
+
+# R and RStudio temporary files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Operating system files
+.DS_Store
+Thumbs.db
