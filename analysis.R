@@ -381,8 +381,11 @@ lidar_summary <- data.frame(
   ),
   Value = c(
     nrow(finnish_las@data),
-    6368,
-    413.31,
+    (max(finnish_las@data$X) - min(finnish_las@data$X)) *
+      (max(finnish_las@data$Y) - min(finnish_las@data$Y)),
+    nrow(finnish_las@data) /
+      ((max(finnish_las@data$X) - min(finnish_las@data$X)) *
+         (max(finnish_las@data$Y) - min(finnish_las@data$Y))),
     min(z),
     median(z),
     max(z)
