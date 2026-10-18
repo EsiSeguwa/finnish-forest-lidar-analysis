@@ -53,11 +53,33 @@ Ground classification, height normalisation, and ecological interpretation requi
 
 ## Reproducibility
 
-The analysis script is `analysis.R`.
+### Requirements
 
-The input LAS file should be placed in `data/raw/cloud7_clip.las`. Generated figures and tables are saved in `outputs/figures/` and `outputs/tables/`.
+- R
+- R packages `lidR`, `ggplot2`, and `dplyr`
 
-The analysis uses R and the `lidR`, `ggplot2`, and `dplyr` packages.
+### Setup
+
+1. Clone or download this repository.
+2. Download `cloud7_clip.las` from the [Hyytiälä UAV Point Cloud Demo Dataset on Zenodo](https://doi.org/10.5281/zenodo.20793895).
+3. Place the LAS file at `data/raw/cloud7_clip.las` in the project directory.
+4. Open the project directory as the working directory in R or RStudio.
+
+Install the required packages by running the following command in the R Console.
+
+```r
+install.packages(c("lidR", "ggplot2", "dplyr"))
+```
+
+Run the analysis script from the project directory using the R Console.
+
+```r
+source("analysis.R")
+```
+
+The script analyses the MixedConifer sample dataset for practice before proceeding to the Finnish point-cloud analysis in Section 15. Figures and tables are saved in `outputs/figures/` and `outputs/tables/`.
+
+The raw LAS dataset is not included in this repository and must be downloaded separately.
 
 ## Future work
 
