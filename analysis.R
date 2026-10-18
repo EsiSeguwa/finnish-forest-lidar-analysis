@@ -17,6 +17,11 @@ dir.create("data/raw", recursive = TRUE,
 dir.create("data/processed", recursive = TRUE,
            showWarnings = FALSE)
 
+# ============================================================
+# PRACTICE ANALYSIS: MixedConifer sample dataset
+# These results are for practice, not the Finnish study.
+# ============================================================
+
 # 3. Locate and load the practice point cloud
 sample_file <- system.file(
   "extdata",
@@ -289,6 +294,11 @@ ggsave(
   height = 5.5,
   dpi = 300
 )
+# ============================================================
+# FINNISH FOREST POINT-CLOUD ANALYSIS
+# Main analysis for this GitHub project
+# ============================================================
+
 # 15. Load the Finnish forest LiDAR dataset
 
 finnish_file <- "data/raw/cloud7_clip.las"
